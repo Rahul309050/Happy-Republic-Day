@@ -18,7 +18,13 @@ function setup() {
 function draw() {
   background(4, 58, 74);
   phase = frameCount * speed;
-  
+  textSize(82);
+  fill("orange")
+  text('Happy', 110, 700);
+  fill("white");
+  text('Republic', 290, 810);
+  fill("green");
+  text('Day', 590, 910);
   for(var strand = 0; strand < numStrands; strand += 1) {
     var strandPhase = phase + map(strand, 0, numStrands, 0, TWO_PI);
     
